@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Test</title>
+	<style type="text/css">
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}*{scrollbar-width:thin;scrollbar-color:#222 #ccc;box-sizing:border-box; font-family: sans-serif;}::-webkit-scrollbar{width:4px;height:4px}::-webkit-scrollbar-track{background:#f3f3f3;-webkit-box-shadow:none;border-radius:3px}::-webkit-scrollbar-thumb{background-color:#777;border-radius:3px}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.clearfix{display:inline-block}.clearfix.rel{position:relative}* html .clearfix{height:1%}.clearfix{display:block}body,html{background:#f6f6f6}
+
+* { font-family: 'Times New Roman', serif; }
+*:focus { outline: none; }
+.mt2 { margin-top: 16px; }
+
+.container { position: relative; overflow: hidden; width: 210mm; height: 297mm; margin: 12px auto; background: white; box-sizing: border-box; -webkit-box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); -moz-box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); }
+.border { position: absolute; z-index: 10; background: transparent; top: 4mm; left: 4mm; border: 0.5mm solid black; width: 202mm; height: 289mm; }
+.sidebar { position: absolute; top: 0; left: 0; width: 50mm; height: 297mm; background: #f3f3f3; }
+
+aside { width: calc(50mm - 4mm - 0.5mm - 6mm); height: calc(297mm - 1mm - 8mm - 6mm); margin: 3mm; float: left; }
+.block { width: 31mm; outline: 0.7mm solid white; display: block; margin: 0 auto; }
+
+h4 { line-height: 14pt; padding: 0; margin: 0; margin-top: 36px; font-size: 12pt; margin-bottom: 10px; }
+aside ul { padding-left: 12px; list-style: circle; }
+aside ul li { padding-left: 4px; text-align: left; }
+aside ul li + li { margin-top: 8px; }
+
+main { width: calc(210mm - 50mm - 0.5mm - 10mm); height: calc(297mm - 1mm - 8mm - 6mm); margin: 3mm; float: right; }
+
+header { display: block; width: 100%; margin: 8px 0; }
+header div { width: auto; float: left; }
+header div h1 { font-size: 32pt; line-height: 28pt; margin-top: 4pt; }
+header div h2 { font-size: 20pt; line-height: 16pt; margin-top: 12pt; }
+header div:last-child { float: right; margin-right: 8px; }
+header div:last-child img { width: 84px; height: 84px; display: block; margin: 0 auto; border-radius: 28px; }
+
+.break { height: 12px; width: 100%; margin: 0 auto; border-bottom: 1px solid #eee; margin-bottom: 12px; }
+
+.address, .contact { font-size: 10pt; line-height: 12pt; }
+.contact { margin: 0; }
+.contact span { width: auto; display: inline-block; min-width: 33.33%; }
+
+.address {  margin: 24px 0 6px 0; }
+
+.ind { display: table; width: 100%; margin-top: 28px; }
+.details, .marks { display: table-cell; }
+.ind .details span, .ind .marks span { display: block; }
+.ind .details .year { font-size: 12pt; font-weight: bold; }
+.ind .details .school { font-size: 11pt; margin-top: 5pt; }
+.ind .details .board { font-size: 11pt; margin-top: 3pt; }
+.ind .marks { text-align: center; vertical-align: middle; width: 100px; }
+.ind .marks span.prime { font-size: 14pt; line-height: 18pt; font-weight: bold; vertical-align: middle; }
+.ind .marks span.sup{ font-size: 11pt; line-height: 12pt; margin-top: 3pt; }
+
+.semDet { margin: 8px 0; }
+.semDet span { display: inline-block; width: 25%; text-align: center; line-height: 14pt; font-size: 11pt; }
+
+h3 { font-size: 15pt; line-height: 18pt; margin-bottom: 8pt; margin-top: 32px; }
+h3:after { display: block; content: ""; width: 64px; height: 1px; border-top: 1px solid black; margin: 4px 0 8px 0; }
+p, li { font-size: 11pt; line-height: 13pt; text-align: justify; }
+
+ol { padding-left: 12px; }
+li { padding-left: 10px; }
+li + li { margin-top: 3px; }
+
+.container:before { display: block; width: auto; height: 32px; content: 'P.T.O'; position: absolute; bottom: 5mm; right: 8mm; text-align: center; font-weight: bold; line-height: 32px; font-size: 11pt; color: #aaa; }
+.container.s:after { display: block; width: 200px; height: 200px; position: absolute; content: ''; bottom: 0; right: 0; background: #f3f3f3; transform: rotateZ(45deg) translateX(145px); }
+
+.det span { display: inline-block; width: 50%; line-height: 18pt; }
+
+.signBlock { width: 100%; display: table; margin: 64px auto; line-height: 14pt; font-size: 12pt; }
+.left {display: table-cell; }
+.right { display: table-cell; text-align: center; width: 200px; margin-top: 48px; }
+.signBlock span { display: block; }
+
+@media only print {
+	body { margin: 0; padding: 0; }
+	.container { margin: 0; box-shadow: none; }
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar"></div>
+		<div class="border clearfix">
+			<aside>
+				<img src="me.jpg" class="block">
+				<h4>NPTEL Certifications</h4>
+				<ul>
+					<li>Heat Transfer</li>
+					<li>Fundamentals of Manufacturing Processes</li>
+					<li>Advanced Fluid Mechanics</li>
+					<li>Product Design and innovation</li>
+				</ul>
+				<h4>Softwares</h4>
+				<ul>
+					<li>Autodesk AutoCAD</li>
+					<li>Autodesk Inventor</li>
+					<li>Ansys APDL</li>
+					<li>Ansys Workbench</li>
+					<li>Festo Fluid Simulator</li>
+					<li>CADian</li>
+					<li>COMSOL Multiphysics</li>
+				</ul>
+				<h4>Programming</h4>
+				<ul>
+					<li>C++</li>
+					<li>HTML5</li>
+					<li>JavaScript</li>
+					<li>CSS3</li>
+					<li>SQL</li>
+				</ul>
+				<h4>Languages</h4>
+				<ul>
+					<li>English</li>
+					<li>Hindi</li>
+					<li>Gujarati</li>
+					<li>Marathi</li>
+				</ul>
+			</aside>
+			<main>
+				<header class="clearfix">
+					<div>
+						<h1>Arun Balram Pandey</h1>
+						<h2>BE Mechanical Engineering</h2>
+					</div>
+					<div>
+						<img src="qr.svg">
+					</div>
+				</header>
+				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, MH - 401209</div>
+				<div class="contact"><span><b>website: </b>https://arunp.dev</span><span style="text-align: center;"><b>email: </b>me@arunp.dev</span><span style="text-align: right;"><b>Mob: </b>+91 - 7715958586</span></div>
+				<div class="break"></div>
+				<h3>Experiences</h3>
+				<div class="ind" style="margin-top: 0;">
+					<div class="details">
+						<span class="year">Graduate Engineer - Trainee</span>
+						<span class="school">Tecnimont Pvt. Ltd., Mumbai</span>
+						<span class="board">Apr 2021&nbsp; -&nbsp; Present</span>
+					</div>
+					<div class="marks"><span class="prime">7</span><span class="sup">Months</span></div>
+				</div>
+				<div class="ind">
+					<div class="details">
+						<span class="year">Assistant System Engineer - Trainee</span>
+						<span class="school">Tata Consultancy Services Ltd., Mumbai</span>
+						<span class="board">Nov 2020&nbsp; -&nbsp; Mar 2021</span>
+					</div>
+					<div class="marks"><span class="prime">4</span><span class="sup">Months</span></div>
+				</div>
+					<h3>Education</h3>
+					<div class="ind" style="margin-top: 0;">
+						<div class="details">
+							<span class="year">Nov 2020 - BE Mechanical Engineering</span>
+							<span class="school">MCT's Rajiv Gandhi Institute of Technology, Mumbai, MH - 400053</span>
+							<span class="board">Mumbai University</span>
+						</div>
+						<div class="marks"><span class="prime">CGPA 8.17</span><span class="sup">( 71% )</span></div>
+					</div>
+					<div class="semDet">
+<span><b>SEM 01: </b>7.85</span><span><b>SEM 02: </b>8.07</span><span><b>SEM 03: </b>7.69</span><span><b>SEM 04: </b>7.88</span>
+<span><b>SEM 05: </b>7.78</span><span><b>SEM 06: </b>7.72</span><span><b>SEM 07: </b>8.28</span><span><b>SEM 08: </b>10.0</span>
+					</div>
+					<div class="ind">
+						<div class="details">
+							<span class="year">May 2016 - Class 12 (Science)</span>
+							<span class="school">Muljibhai Mehta International School, Virar, Palghar, MH - 401303</span>
+							<span class="board">Central Board of Secondary Education</span>
+						</div>
+						<div class="marks"><span class="prime">89.8%</span></div>
+					</div>
+					<div class="ind">
+						<div class="details">
+							<span class="year">May 2014 - Class 10</span>
+							<span class="school">Sainik School Balachadi, Jamnagar, GJ - 361230</span>
+							<span class="board">Central Board of Secondary Education</span>
+						</div>
+						<div class="marks"><span class="prime">CGPA 9.6</span><span class="sup">( 90.2% )</span></div>
+					</div>
+					<h3>Publications</h3>
+					<ol>
+						<li>Arun B. Pandey, Pranav B. Nawale, Rohan R. Patil, Shubham S. Patil, Vishram B. Sawant, 2020, “<i>Effect of Normalization Techniques on MEMS Digital Micromirror Selection using MADM Methodology</i>”, International Journal for Research in Engineering Applications and Management, Vol. 06, Issue 01, DOI 10.35291/2454-9150.2020.0259, pp. 67-75.</li>
+					</ol>
+					<h3>Trainings & Internships</h3>
+					<ol>
+						<li>1-month project training based on C++, entitled Bellow Design for Air Cooler of Molten Salt Facility at Bhabha Atomic Research Centre, Trombay, Mumbai – 400084, Maharashtra (IN)</li>
+						<li>7-days hands-on-training of Power Plant Familiarization at Reliance Thermal Power Plant, Dahanu Road, Palghar – 401602, Maharashtra (IN).</li>
+					</ol>
+			</main>
+		</div>
+	</div>
+	<div class="container s">
+		<div class="border" style="padding: 3mm;">
+			<h3 class="mt2">BE Project</h3>
+			<p>Project entitled Numerical Validation and MADM Optimization of Various Geometries of MEMS Devices, guided by Mr. V. B. Sawant, based on optimization of micro-beam geometries for RF Switch and Digital Micromirror to get a geometry with minimum actuation voltage using MADM Techniques TOPSIS and VIKOR for selection of preferred geometries and force vs actuation voltage analysis.</p>
+					
+			<h3>Membership of Technical Societies</h3>
+			<ol>
+				<li>Indian Society of Heating, Refrigeration and Air Conditioning Engineers (ISHRAE) – Member since 2018 – Appointed as Documentation Head for ISHRAE RGIT Student Chapter 2018 – 19.</li>
+			</ol>
+			<h3>Achievements</h3>
+			<ol>
+				<li>Gold Medal in Debate Competition organised by Expert’s International High School, Virar West, Palghar – 401303, Maharashtra (IN)</li>
+				<li>Gold Medal in Elocution Competition, PRISM Interschool Competition 2014 organised by M.G.M. Academy High School & Junior College, Virar – 401303, Maharashtra (IN)</li>
+				<li>Silver Medal in Elocution Competition organised by Vasai-Virar City Municipal Corporation, Vasai – Virar, Palghar – 401209, Maharashtra (IN)</li>
+				<li>Participated in National Level Essay Writing Competition organised by Shri Mata Vaishno Devi University, Katra – 182320, Jammu & Kashmir (IN)</li>
+				<li>Participated in Secure Website Development Competition, organised by Google LLC.</li>
+			</ol>
+			<h3>Personal Information</h3>
+			<p class="det"><span><b>Date of Birth:</b> July 07, 1998</span><span><b>Gender:</b> Male</span>
+			<span><b>Religion:</b> Hindu</span><span><b>Category:</b> Unreserved</span>
+			<span><b>Maritial Status:</b> Unmarried</span><span><b>Father's Name:</b> Balram K Pandey</span></p>
+			<h3>Hobbies</h3>
+			<ol>
+				<li>Reading Books</li>
+				<li>Web Designing</li>
+				<li>Drawing</li>
+			</ol>
+			<h3>Declaration</h3>
+			<p>I hereby declare that the above-mentioned information is correct to the best of my knowledge and belief and I bear the responsibility for the correctness of the above-mentioned particulars.</p>
+			<div class="signBlock">
+				<div class="left">
+					<span>Date: <b id="date"></b></span>
+					<span>Place: <b>Mumbai</b></span>
+				</div>
+				<div class="right"><span style="font-size: 10pt; margin-top: 12pt;">Signature</span><span style="margin-top: 2pt; font-size: 12pt;"><b>Arun Balram Pandey</b></span></b></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var d = new Date();
+		var date = ("0" + d.getDate()).slice(-2);
+		var mon = d.toLocaleString('default', { month: 'short' });
+		var year = d.getFullYear();
+		document.getElementById('date').innerHTML = date +" "+ mon +" "+ year;
+	</script>
+</body>
+</html>
