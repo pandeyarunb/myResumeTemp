@@ -80,7 +80,7 @@ li + li { margin-top: 3px; }
 		<div class="sidebar"></div>
 		<div class="border clearfix">
 			<aside>
-				<img src="/me.jpg" class="block">
+				<img src="me.jpg" class="block">
 				<h4>NPTEL Certifications</h4>
 				<ul>
 					<li>Heat Transfer</li>
@@ -121,7 +121,7 @@ li + li { margin-top: 3px; }
 						<h2>BE Mechanical Engineering</h2>
 					</div>
 					<div>
-						<img src="/qr.svg">
+						<img src="qr.svg">
 					</div>
 				</header>
 				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, MH - 401209</div>
@@ -134,7 +134,7 @@ li + li { margin-top: 3px; }
 						<span class="school">Tecnimont Pvt. Ltd., Mumbai</span>
 						<span class="board">Apr 2021&nbsp; -&nbsp; Present</span>
 					</div>
-					<div class="marks"><span class="prime">7</span><span class="sup">Months</span></div>
+					<div class="marks"><span class="prime" id="monthCount"></span><span class="sup" id="yearCount"></span></div>
 				</div>
 				<div class="ind">
 					<div class="details">
@@ -151,7 +151,7 @@ li + li { margin-top: 3px; }
 							<span class="school">MCT's Rajiv Gandhi Institute of Technology, Mumbai, MH - 400053</span>
 							<span class="board">Mumbai University</span>
 						</div>
-						<div class="marks"><span class="prime">CGPA 8.17</span><span class="sup">( 71% )</span></div>
+						<div class="marks"><span class="prime">CGPA 8.17</span><span class="sup">( 74.82% )</span></div>
 					</div>
 					<div class="semDet">
 <span><b>SEM 01: </b>7.85</span><span><b>SEM 02: </b>8.07</span><span><b>SEM 03: </b>7.69</span><span><b>SEM 04: </b>7.88</span>
@@ -229,6 +229,25 @@ li + li { margin-top: 3px; }
 		var mon = d.toLocaleString('default', { month: 'short' });
 		var year = d.getFullYear();
 		document.getElementById('date').innerHTML = date +" "+ mon +" "+ year;
+
+
+		function monthDiff(d2, d1) {
+		    var months;
+		    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+		    months -= d1.getMonth();
+		    months += d2.getMonth();
+		    return months <= 0 ? 0 : months;
+		}
+		var startDate = new Date('04-01-2021');
+		var finDate = new Date();
+		var months = monthDiff(finDate, startDate)
+		if (months < 12) {
+			document.getElementById('monthCount').innerHTML = months % 12;
+			document.getElementById('yearCount').innerHTML = 'Months';
+		} else {
+			document.getElementById('monthCount').innerHTML = Math.floor(months / 12);
+			document.getElementById('yearCount').innerHTML = (Math.floor(months / 12) <= 1)? 'Year' : 'Years';
+		}		
 	</script>
 </body>
 </html>
