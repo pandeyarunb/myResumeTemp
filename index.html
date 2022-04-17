@@ -90,9 +90,9 @@ li + li { margin-top: 3px; }
 				</ul>
 				<h4>Softwares</h4>
 				<ul>
+					<li>AVEVA E3D</li>
 					<li>Autodesk AutoCAD</li>
 					<li>Autodesk Inventor</li>
-					<li>Ansys APDL</li>
 					<li>Ansys Workbench</li>
 					<li>Festo Fluid Simulator</li>
 					<li>CADian</li>
@@ -124,22 +124,22 @@ li + li { margin-top: 3px; }
 						<img src="qr.svg">
 					</div>
 				</header>
-				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, MH - 401209</div>
+				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, Maharashtra - 401209 (India)</div>
 				<div class="contact"><span><b>website: </b>https://arunp.dev</span><span style="text-align: center;"><b>email: </b>me@arunp.dev</span><span style="text-align: right;"><b>Mob: </b>+91 - 7715958586</span></div>
 				<div class="break"></div>
 				<h3>Experiences</h3>
 				<div class="ind" style="margin-top: 0;">
 					<div class="details">
-						<span class="year">Graduate Engineer - Trainee</span>
-						<span class="school">Tecnimont Pvt. Ltd., Mumbai</span>
+						<span class="year">Tecnimont Pvt. Ltd., Mumbai</span>
+						<span class="school">Engineer</span>
 						<span class="board">Apr 2021&nbsp; -&nbsp; Present</span>
 					</div>
 					<div class="marks"><span class="prime" id="monthCount"></span><span class="sup" id="yearCount"></span></div>
 				</div>
 				<div class="ind">
 					<div class="details">
-						<span class="year">Assistant System Engineer - Trainee</span>
-						<span class="school">Tata Consultancy Services Ltd., Mumbai</span>
+						<span class="year">Tata Consultancy Services Ltd., Mumbai</span>
+						<span class="school">Assistant System Engineer - Trainee</span>
 						<span class="board">Nov 2020&nbsp; -&nbsp; Mar 2021</span>
 					</div>
 					<div class="marks"><span class="prime">4</span><span class="sup">Months</span></div>
@@ -160,7 +160,7 @@ li + li { margin-top: 3px; }
 					<div class="ind">
 						<div class="details">
 							<span class="year">May 2016 - Class 12 (Science)</span>
-							<span class="school">Muljibhai Mehta International School, Virar, Palghar, MH - 401303</span>
+							<span class="school">Muljibhai Mehta International School, Virar, MH - 401303</span>
 							<span class="board">Central Board of Secondary Education</span>
 						</div>
 						<div class="marks"><span class="prime">89.8%</span></div>
@@ -188,7 +188,7 @@ li + li { margin-top: 3px; }
 	<div class="container s">
 		<div class="border" style="padding: 3mm;">
 			<h3 class="mt2">BE Project</h3>
-			<p>Project entitled Numerical Validation and MADM Optimization of Various Geometries of MEMS Devices, guided by Mr. V. B. Sawant, based on optimization of micro-beam geometries for RF Switch and Digital Micromirror to get a geometry with minimum actuation voltage using MADM Techniques TOPSIS and VIKOR for selection of preferred geometries and force vs actuation voltage analysis.</p>
+			<p>Project entitled Numerical Validation and MADM Optimization of Various Geometries of MEMS Devices, guided by Mr. V. B. Sawant, based on optimization of micro-beam geometries for RF Switch and Digital Micromirror to get a geometry with minimum actuation voltage using MADM Techniques TOPSIS and VIKOR for selection of preferred geometries and force v/s actuation voltage analysis.</p>
 					
 			<h3>Membership of Technical Societies</h3>
 			<ol>
@@ -196,11 +196,10 @@ li + li { margin-top: 3px; }
 			</ol>
 			<h3>Achievements</h3>
 			<ol>
+				<li>Participated in National Level Essay Writing Competition organised by Shri Mata Vaishno Devi University, Katra – 182320, Jammu & Kashmir (IN)</li>
+				<li>Silver Medal in Elocution Competition organised by Vasai-Virar City Municipal Corporation, Vasai – Virar, Palghar – 401209, Maharashtra (IN)</li>
 				<li>Gold Medal in Debate Competition organised by Expert’s International High School, Virar West, Palghar – 401303, Maharashtra (IN)</li>
 				<li>Gold Medal in Elocution Competition, PRISM Interschool Competition 2014 organised by M.G.M. Academy High School & Junior College, Virar – 401303, Maharashtra (IN)</li>
-				<li>Silver Medal in Elocution Competition organised by Vasai-Virar City Municipal Corporation, Vasai – Virar, Palghar – 401209, Maharashtra (IN)</li>
-				<li>Participated in National Level Essay Writing Competition organised by Shri Mata Vaishno Devi University, Katra – 182320, Jammu & Kashmir (IN)</li>
-				<li>Participated in Secure Website Development Competition, organised by Google LLC.</li>
 			</ol>
 			<h3>Personal Information</h3>
 			<p class="det"><span><b>Date of Birth:</b> July 07, 1998</span><span><b>Gender:</b> Male</span>
@@ -245,8 +244,9 @@ li + li { margin-top: 3px; }
 			document.getElementById('monthCount').innerHTML = months % 12;
 			document.getElementById('yearCount').innerHTML = 'Months';
 		} else {
-			document.getElementById('monthCount').innerHTML = Math.floor(months / 12);
-			document.getElementById('yearCount').innerHTML = (Math.floor(months / 12) <= 1)? 'Year' : 'Years';
+			var floating = parseFloat(months / 12).toFixed(1);
+			document.getElementById('monthCount').innerHTML = floating;
+			document.getElementById('yearCount').innerHTML = (floating <= 1)? 'Year' : 'Years';
 		}		
 	</script>
 </body>
