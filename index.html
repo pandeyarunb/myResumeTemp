@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,15 +32,15 @@ header div h2 { font-size: 20pt; line-height: 16pt; margin-top: 12pt; }
 header div:last-child { float: right; margin-right: 8px; }
 header div:last-child img { width: 84px; height: 84px; display: block; margin: 0 auto; border-radius: 28px; }
 
-.break { height: 12px; width: 100%; margin: 0 auto; border-bottom: 1px solid #eee; margin-bottom: 12px; }
+.break { height: 8px; width: 100%; margin: 0 auto; border-bottom: 1px solid #eee; margin-bottom: 12px; }
 
 .address, .contact { font-size: 10pt; line-height: 12pt; }
 .contact { margin: 0; }
 .contact span { width: auto; display: inline-block; min-width: 33.33%; }
 
-.address {  margin: 24px 0 6px 0; }
+.address {  margin: 18px 0 6px 0; }
 
-.ind { display: table; width: 100%; margin-top: 28px; }
+.ind { display: table; width: 100%; margin-top: 20px; }
 .details, .marks { display: table-cell; }
 .ind .details span, .ind .marks span { display: block; }
 .ind .details .year { font-size: 12pt; font-weight: bold; }
@@ -52,13 +53,15 @@ header div:last-child img { width: 84px; height: 84px; display: block; margin: 0
 .semDet { margin: 8px 0; }
 .semDet span { display: inline-block; width: 25%; text-align: center; line-height: 14pt; font-size: 11pt; }
 
-h3 { font-size: 15pt; line-height: 18pt; margin-bottom: 8pt; margin-top: 32px; }
+h3 { font-size: 15pt; line-height: 18pt; margin-bottom: 8pt; margin-top: 24px; }
 h3:after { display: block; content: ""; width: 64px; height: 1px; border-top: 1px solid black; margin: 4px 0 8px 0; }
 p, li { font-size: 11pt; line-height: 13pt; text-align: justify; }
 
 ol { padding-left: 12px; }
 li { padding-left: 10px; }
-li + li { margin-top: 3px; }
+li + li { margin-top: 6px; }
+
+li ul { padding-left: 16px;}
 
 .container:before { display: block; width: auto; height: 32px; content: 'P.T.O'; position: absolute; bottom: 5mm; right: 8mm; text-align: center; font-weight: bold; line-height: 32px; font-size: 11pt; color: #aaa; }
 .container.s:after { display: block; width: 200px; height: 200px; position: absolute; content: ''; bottom: 0; right: 0; background: #f3f3f3; transform: rotateZ(45deg) translateX(145px); }
@@ -82,24 +85,16 @@ li + li { margin-top: 3px; }
 		<div class="border clearfix">
 			<aside>
 				<img src="me.jpg" class="block">
-				<h4>NPTEL Certifications</h4>
-				<ul>
-					<li>Heat Transfer</li>
-					<li>Fundamentals of Manufacturing Processes</li>
-					<li>Advanced Fluid Mechanics</li>
-					<li>Product Design and innovation</li>
-				</ul>
+				
 				<h4>Softwares</h4>
 				<ul>
-					<li>Hexagon PDS</li>
-					<li>Hexagon S3D</li>
-					<li>AVEVA E3D</li>
+					<li>Hexagon S3D - 2Yrs</li>
+					<li>AVEVA E3D - 1Yr</li>
+					<li>Hexagon PDS - 3Yrs</li>
 					<li>Autodesk AutoCAD</li>
 					<li>Autodesk Inventor</li>
 					<li>Ansys Workbench</li>
 					<li>Festo Fluid Simulator</li>
-					<li>CADian</li>
-					<li>COMSOL Multiphysics</li>
 				</ul>
 				<h4>Programming</h4>
 				<ul>
@@ -107,14 +102,21 @@ li + li { margin-top: 3px; }
 					<li>HTML5</li>
 					<li>JavaScript</li>
 					<li>CSS3</li>
-					<li>SQL</li>
+					<li>MySQL</li>
+				</ul>
+				<h4>NPTEL Certifications</h4>
+				<ul>
+					<li>Heat Transfer</li>
+					<li>Fundamentals of Manufacturing Processes</li>
+					<li>Advanced Fluid Mechanics</li>
+					<li>Product Design and innovation</li>
 				</ul>
 				<h4>Languages</h4>
 				<ul>
 					<li>English</li>
 					<li>Hindi</li>
-					<li>Gujarati</li>
 					<li>Marathi</li>
+					<li>Gujarati</li>
 				</ul>
 			</aside>
 			<main>
@@ -130,7 +132,7 @@ li + li { margin-top: 3px; }
 				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, Maharashtra - 401209 (India)</div>
 				<div class="contact"><span><b>website: </b>https://arunp.dev</span><span style="text-align: center;"><b>email: </b>me@arunp.dev</span><span style="text-align: right;"><b>Mob: </b>+91 - 7715958586</span></div>
 				<div class="break"></div>
-				<h3>Experiences</h3>
+				<h3 style="margin-top: 12px;">Experiences</h3>
 				<div class="ind" style="margin-top: 0;">
 					<div class="details">
 						<span class="year">Tecnimont Pvt. Ltd., Mumbai</span>
@@ -140,8 +142,17 @@ li + li { margin-top: 3px; }
 					<div class="marks"><span class="prime" id="monthCount"></span><span class="sup" id="yearCount"></span></div>
 				</div>
 				<ul style="padding-left: 14px; margin-top: 8px;">
-					<li>Assignments consisting of layout activities for project Rijeka Refinery Upgrade Project, Croatia and Advanced Poly Olefins Company, Saudi Arabia.</li>
-					<li>Working as 3D Model Administrator for AMUR Gas Chemical Complex (SIBUR) and Repsol Industrial Complex, Sines.</li>
+					<li><b>3D Software Administrator</b><br>Activties comprising of Generation of Review file (NavisWorks and UPV) based on model review requirements. Setup and Generation of WBS based Isometrics, checking and issuing of Isometrics, Generation of various reports from 3D model and Review files, handling of Spec definition for Parametric Assemblies and import of TEKLA/zvf models in 3D environment. Participating in active automation of daily tasks to streamline project deliverables.
+						<ul>
+							<li><b>AMIRAL Project</b> (S3D 13.1) - Apr 24 to Present</li>
+							<li><b>Covestro Project</b> (S3D 2019) - Jan 24 to Apr 24</li>
+							<li><b>REPSOL Industrial Complex, Sines, Portugal</b> (S3D 2018) - Jun 22 to Jan 24</li>
+							<li><b>AMUR Gas Chemical Complex (SIBUR), Russia</b> (E3D) - Nov 21 to Jun 22</li>
+							<li><b>IOCL Barauni</b> (PDS 12)</li>
+							<li><b>GEMLIK Urea Plant</b> (PDS 12)</li>
+						</ul>
+					</li>
+					<li><b>Layout Activities<br>Rijeka Refinery Upgrade Project, Croatia</b> - Activities including MTO, Iso flowcheck from P&ID and Equipmnent Nozzle Orientation Check from Vendor GA (Apr 21 to Nov 21)</li>		
 				</ul>
 				<div class="ind">
 					<div class="details">
@@ -183,10 +194,6 @@ li + li { margin-top: 3px; }
 						</div>
 						<div class="marks"><span class="prime">CGPA 9.6</span><span class="sup">( 90.2% )</span></div>
 					</div>
-					<h3>Publications</h3>
-					<ol>
-						<li>Arun B. Pandey, Pranav B. Nawale, Rohan R. Patil, Shubham S. Patil, Vishram B. Sawant, 2020, “<i>Effect of Normalization Techniques on MEMS Digital Micromirror Selection using MADM Methodology</i>”, International Journal for Research in Engineering Applications and Management, Vol. 06, Issue 01, DOI 10.35291/2454-9150.2020.0259, pp. 67-75.</li>
-					</ol>
 			</main>
 		</div>
 	</div>
@@ -194,27 +201,25 @@ li + li { margin-top: 3px; }
 		<div class="border" style="padding: 3mm;">
 			<h3 class="mt2">Trainings & Internships</h3>
 					<ol>
-						<li>1-month project training based on C++, entitled Bellow Design for Air Cooler of Molten Salt Facility at Bhabha Atomic Research Centre, Trombay, Mumbai – 400084, Maharashtra (IN)</li>
-						<li>7-days hands-on-training of Power Plant Familiarization at Reliance Thermal Power Plant, Dahanu Road, Palghar – 401602, Maharashtra (IN).</li>
+						<li>1-month project training based on C++, entitled <b>Bellow Design for Air Cooler of Molten Salt Facility </b> at Bhabha Atomic Research Centre, Trombay, Mumbai – 400084, Maharashtra (IN)</li>
+						<li>7-days hands-on-training of <b>Power Plant Familiarization</b> at Reliance Thermal Power Plant, Dahanu Road, Palghar – 401602, Maharashtra (IN).</li>
 					</ol>
 			<h3>BE Project</h3>
 			<p>Project entitled Numerical Validation and MADM Optimization of Various Geometries of MEMS Devices, guided by Mr. V. B. Sawant, based on optimization of micro-beam geometries for RF Switch and Digital Micromirror to get a geometry with minimum actuation voltage using MADM Techniques TOPSIS and VIKOR for selection of preferred geometries and force v/s actuation voltage analysis.</p>
-					
+			
+			<h3>Publications</h3>
+					<ol>
+						<li>Arun B. Pandey, Pranav B. Nawale, Rohan R. Patil, Shubham S. Patil, Vishram B. Sawant, 2020, “<i>Effect of Normalization Techniques on MEMS Digital Micromirror Selection using MADM Methodology</i>”, International Journal for Research in Engineering Applications and Management, Vol. 06, Issue 01, DOI 10.35291/2454-9150.2020.0259, pp. 67-75.</li>
+					</ol>
+
 			<h3>Membership of Technical Societies</h3>
 			<ol>
 				<li>Indian Society of Heating, Refrigeration and Air Conditioning Engineers (ISHRAE) – Member since 2018 – Appointed as Documentation Head for ISHRAE RGIT Student Chapter 2018 – 19.</li>
 			</ol>
-			<h3>Achievements</h3>
-			<ol>
-				<li>Participated in National Level Essay Writing Competition organised by Shri Mata Vaishno Devi University, Katra – 182320, Jammu & Kashmir (IN)</li>
-				<li>Silver Medal in Elocution Competition organised by Vasai-Virar City Municipal Corporation, Vasai – Virar, Palghar – 401209, Maharashtra (IN)</li>
-				<li>Gold Medal in Debate Competition organised by Expert’s International High School, Virar West, Palghar – 401303, Maharashtra (IN)</li>
-				<li>Gold Medal in Elocution Competition, PRISM Interschool Competition 2014 organised by M.G.M. Academy High School & Junior College, Virar – 401303, Maharashtra (IN)</li>
-			</ol>
 			<h3>Personal Information</h3>
 			<p class="det"><span><b>Date of Birth:</b> July 07<sup>th</sup>, 1998</span><span><b>Gender:</b> Male</span>
 			<span><b>Religion:</b> Hindu</span><span><b>Category:</b> Unreserved</span>
-			<span><b>Maritial Status:</b> Unmarried</span><span><b>Father's Name:</b> Balram K Pandey</span></p>
+			<span><b>Maritial Status:</b> Married</span><span><b>Father's Name:</b> Balram K Pandey</span></p>
 			<h3>Hobbies</h3>
 			<ol>
 				<li>Reading Books</li>
@@ -232,6 +237,7 @@ li + li { margin-top: 3px; }
 			</div>
 		</div>
 	</div>
+	
 	<script>
 		var d = new Date();
 		var date = ("0" + d.getDate()).slice(-2);
