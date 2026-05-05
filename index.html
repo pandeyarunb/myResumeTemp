@@ -7,14 +7,14 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 
 * { font-family: 'Times New Roman', serif; }
 *:focus { outline: none; }
-.mt2 { margin-top: 16px; }
+.mt2 { margin-top: 32px; }
 
 .container { position: relative; overflow: hidden; width: 210mm; height: 297mm; margin: 12px auto; background: white; box-sizing: border-box; -webkit-box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); -moz-box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15); }
 .border { position: absolute; z-index: 10; background: transparent; top: 4mm; left: 4mm; border: 0.5mm solid black; width: 202mm; height: 289mm; }
 .sidebar { position: absolute; top: 0; left: 0; width: 52.5mm; height: 297mm; background: #f3f3f3; }
 
 aside { width: calc(52.5mm - 4mm - 0.5mm - 6mm); height: calc(297mm - 1mm - 8mm - 6mm); margin: 3mm; float: left; }
-.block { width: 31mm; outline: 0.7mm solid white; display: block; margin: 0 auto; }
+.block { width: 31mm; outline: 0.7mm solid white; display: block; margin: 0 auto 32px auto; }
 
 sup { vertical-align: super; font-size: 0.8; }
 h4 { line-height: 14pt; padding: 0; margin: 0; margin-top: 36px; font-size: 12pt; margin-bottom: 10px; }
@@ -28,9 +28,8 @@ header { display: block; width: 100%; margin: 8px 0; }
 header div { width: auto; float: left; }
 header div h1 { font-size: 32pt; line-height: 28pt; margin-top: 4pt; }
 header div h2 { font-size: 20pt; line-height: 16pt; margin-top: 12pt; }
-.qRContainer { float: right; margin-right: -4px; margin-top: -12px; background: #f3f3f3; border-radius: 4px; text-align: center; }
-.qRContainer img { width: 84px; height: 84px; display: block; margin: 0 auto; border-radius: 8px; padding: 2px; }
-.qRContainer span { font-size: 11px; color: #888; line-height: 18px; }
+.qRContainer { float: right; margin-right: 4px; margin-top: -8px; text-align: center; }
+.qRContainer img { width: 96px; height: auto; display: block; margin: 0 auto; padding: 0; }
 
 .break { height: 12px; width: 100%; margin: 0 auto; border-bottom: 1px solid #eee; margin-bottom: 12px; }
 
@@ -63,7 +62,10 @@ li + li { margin-top: 8px; }
 
 li ul { padding-left: 16px;}
 
-.container:before { display: block; width: auto; height: 32px; content: 'P.T.O'; position: absolute; bottom: 5mm; right: 8mm; text-align: center; font-weight: bold; line-height: 32px; font-size: 11pt; color: #aaa; }
+aside p + p { margin-top: 16pt; }
+aside p b { display: block; margin-bottom: 2pt; }
+
+.container:before { display: block; width: auto; height: 32px; content: 'P.T.O'; position: absolute; bottom: 3mm; right: 6mm; text-align: center; font-weight: bold; line-height: 32px; font-size: 9pt; color: #aaa; }
 .container.s:after { display: grid; width: 100%; height: 100px; position: absolute; align-content: center; text-align: center; content: 'Arun Balram Pandey'; bottom: 0; right: 0; background: #f3f3f3; color: #ccc; font-size: 20px; }
 
 .det span { display: inline-block; width: 50%; line-height: 18pt; }
@@ -83,42 +85,6 @@ li ul { padding-left: 16px;}
 	<div class="container">
 		<div class="sidebar"></div>
 		<div class="border clearfix">
-			<aside>
-				<img src="me.jpg" class="block">
-				
-				<h4>Softwares</h4>
-				<ul>
-					<li>Hexagon S3D</li>
-					<li>Hexagon PDS</li>
-					<li>Aveva E3D</li>
-					<li>Autodesk AutoCAD</li>
-					<li>Autodesk Inventor</li>
-					<li>Ansys Workbench</li>
-					<li>Festo Fluid Simulator</li>
-				</ul>
-				<h4>Programming</h4>
-				<ul>
-					<li>C++</li>
-					<li>HTML5</li>
-					<li>JavaScript</li>
-					<li>CSS3</li>
-					<li>MySQL</li>
-				</ul>
-				<h4>NPTEL Certifications</h4>
-				<ul>
-					<li>Heat Transfer</li>
-					<li>Fundamentals of Manufacturing Processes</li>
-					<li>Advanced Fluid Mechanics</li>
-					<li>Product Design and innovation</li>
-				</ul>
-				<h4>Languages</h4>
-				<ul>
-					<li>English</li>
-					<li>Hindi</li>
-					<li>Marathi</li>
-					<li>Gujarati</li>
-				</ul>
-			</aside>
 			<main>
 				<header class="clearfix">
 					<div>
@@ -126,12 +92,11 @@ li ul { padding-left: 16px;}
 						<h2>BE Mechanical Engineering</h2>
 					</div>
 					<div class="qRContainer">
-						<img src="qr.svg">
-						<span>scan me</span>
+						<img src="qr.png">
 					</div>
 				</header>
 				<div class="address"><b>Address:</b> C/601 Jaai Building, Central Park, Nalasopara East, Palghar, Maharashtra - 401209 (India)</div>
-				<div class="contact"><span><b>website: </b>https://arunp.dev</span><span style="text-align: center;"><b>email: </b>me@arunp.dev</span><span style="text-align: right;"><b>Mob: </b>+91 - 7715958586</span></div>
+				<div class="contact"><span><b>Website: </b>https://arunp.dev</span><span style="text-align: center;"><b>Email: </b>pandeyarunb@gmail.com</span><span style="text-align: right;"><b>Mob: </b>+91 - 7715958586</span></div>
 				<div class="break"></div>
 				<h3 style="margin-top: 12px;">Experiences</h3>
 				<div class="ind" style="margin-top: 0;">
@@ -199,6 +164,45 @@ li ul { padding-left: 16px;}
 						<div class="marks"><span class="prime">CGPA 9.6</span><span class="sup">( 90.2% )</span></div>
 					</div>
 			</main>
+			<aside>
+				<img src="me.jpg" class="block">
+				
+				<p><b>Date of Birth:</b>07<sup>th</sup> July 1998</p>
+				<p><b>Category:</b>Unreserved</p>
+				<p><b>Marital Status:</b>Married</p>
+
+
+				<h4>Softwares:</h4>
+				<ul>
+					<li>Hexagon S3D</li>
+					<li>Hexagon PDS</li>
+					<li>Autodesk AutoCAD</li>
+					<li>Autodesk Inventor</li>
+					<li>Autodesk NavisWorks</li>
+					<li>UniversalPlantViewer</li>
+				</ul>
+				<h4>Programming:</h4>
+				<ul>
+					<li>C++</li>
+					<li>HTML5</li>
+					<li>JavaScript</li>
+					<li>CSS3</li>
+					<li>MySQL</li>
+				</ul>
+				<h4>Hobbies:</h4>
+				<ul>
+					<li>Reading Books</li>
+					<li>Web Designing</li>
+					<li>Drawing</li>
+				</ul>
+				<h4>Languages:</h4>
+				<ul>
+					<li>English</li>
+					<li>Hindi</li>
+					<li>Marathi</li>
+					<li>Gujarati</li>
+				</ul>
+			</aside>
 		</div>
 	</div>
 	<div class="container s">
@@ -208,23 +212,12 @@ li ul { padding-left: 16px;}
 						<li>1-month project training based on C++, entitled <b>Bellow Design for Air Cooler of Molten Salt Facility </b> at Bhabha Atomic Research Centre, Trombay, Mumbai – 400084, Maharashtra (IN)</li>
 						<li>7-days hands-on-training of <b>Power Plant Familiarization</b> at Reliance Thermal Power Plant, Dahanu Road, Palghar – 401602, Maharashtra (IN).</li>
 					</ol>
-			<h3>BE Project</h3>
-			<p>Project entitled Numerical Validation and MADM Optimization of Various Geometries of MEMS Devices, guided by Mr. V. B. Sawant, based on optimization of micro-beam geometries for RF Switch and Digital Micromirror to get a geometry with minimum actuation voltage using MADM Techniques TOPSIS and VIKOR for selection of preferred geometries and force v/s actuation voltage analysis.</p>
-			
 			<h3>Publications</h3>
 					<ol>
 						<li>Arun B. Pandey, Pranav B. Nawale, Rohan R. Patil, Shubham S. Patil, Vishram B. Sawant, 2020, “<i>Effect of Normalization Techniques on MEMS Digital Micromirror Selection using MADM Methodology</i>”, International Journal for Research in Engineering Applications and Management, Vol. 06, Issue 01, DOI 10.35291/2454-9150.2020.0259, pp. 67-75.</li>
 					</ol>
-			<h3>Personal Information</h3>
-			<p class="det"><span><b>Date of Birth:</b> July 07<sup>th</sup>, 1998</span><span><b>Gender:</b> Male</span>
-			<span><b>Religion:</b> Hindu</span><span><b>Category:</b> Unreserved</span>
-			<span><b>Maritial Status:</b> Married</span><span><b>Father's Name:</b> Balram K Pandey</span></p>
-			<h3>Hobbies</h3>
-			<ol>
-				<li>Reading Books</li>
-				<li>Web Designing</li>
-				<li>Drawing</li>
-			</ol>
+			
+			
 			<h3>Declaration</h3>
 			<p>I hereby declare that the above-mentioned information is correct to the best of my knowledge and belief and I bear the responsibility for the correctness of the above-mentioned particulars.</p>
 			<div class="signBlock">
